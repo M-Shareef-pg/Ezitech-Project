@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/main\ pic.jpg);
+}
+
+.overlay{
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 122, 255, 0.41); 
+}
+
+
+/* inside div */
+
+.upperNav{
+    width: 75%;
+    padding: 0.8rem;
+    justify-self: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.upperRight{
+    width: 75%;
+    display: flex;
+    gap: 2rem;
+}
+
+.box{
+    display: flex;
+    color: white;
+    font-size: 0.83rem;
+    gap: 0.4rem;
+}
+
+.right-div-Left{
+    color: white;
+    display: flex;
+    font-size: 1.3rem;
+    gap: 0.5rem;
+}
