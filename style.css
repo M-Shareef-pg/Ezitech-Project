@@ -211,12 +211,6 @@ body{
 
 
 /* 2nd section started */
-.Allpages{
-    width: 100%;
-    background-image: url(images/full\ img.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-}
 
 .secondSection{
     width: 100%;
@@ -313,6 +307,64 @@ body{
     width: 70%;
     color: gray;
 }
+
+/* third section started */
+
+.thirdsection{
+    justify-self: center;
+    padding-top: 5%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* left part */
+.img-div{
+    width: 60%;
+    position: relative;
+    left: 12%;
+}
+.img-behind{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.session-img-one{
+    width: 35%;
+    border-radius: 1rem;
+}
+
+.session-img-two{
+    width: 20%;
+    height: 50%;
+    border-radius: 1rem;
+}
+
+/* z-index img */
+.session-img-three{
+    width: 30%;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 40%;
+    left: 20%;
+
+    /* top: 225%;
+    left: 34%;   */
+}
+
+/* right part of 3rd section */
+.content-div{
+    width: 25%;
+    height: 55%;
+    border: 2px solid black;
+    position: relative;
+    right: 13%;
+    top: 9%;
+}
+
+
+
 
 
 
@@ -588,16 +640,11 @@ body{
 
     
 /* 2nd section started */
-.Allpages{
-    width: 100%;
-    background-image: none;
-    background-size:none;
-    background-repeat: none;
-}
+
 
 .secondSection{
     width: 100%;
-    height: 100vh;
+    height: 210vh;
 }
 
 /* logos slide */
