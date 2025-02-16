@@ -26,5 +26,3 @@ anchors.forEach(anchor => {
 });
 
 
-
-

@@ -5,9 +5,6 @@
     border: none;
 }
 
-body{
-}
-
 
 .sm-nav{
     display: none;
@@ -348,9 +345,13 @@ body{
     position: relative;
     bottom: 35%;
     left: 20%;
+}
 
-    /* top: 225%;
-    left: 34%;   */
+#dots-img1{
+    position: relative;
+    bottom: 25%;
+    left: 12%;
+    z-index: -1;
 }
 
 /* right part of 3rd section */
@@ -380,6 +381,66 @@ body{
 .first-p{
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+/* fourth section */
+
+.fourth-section{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.fourth-main{
+    justify-self: center;
+    width: 75%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between  ;
+}
+
+/* left */
+.fourth-left h1{
+    font-size: 3rem;
+    width: 50%;
+}
+
+
+.fourth-left p{
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 5%;
+}
+
+
+
+
+/* right */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.stat-box {
+    background: white;
+    padding: 45px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.stat-box h2 {
+    color: #002F6C;
+    font-size: 3rem;
+}
+.stat-box p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 
@@ -758,12 +819,214 @@ body{
     width: 70%;
     color: gray;
 }
+
+/* third section started */
+
+.thirdsection{
+    justify-self: center;
+    padding-top: 5%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* left part */
+.img-div{
+    width: 60%;
+    position: relative;
+    left: 12%;
+    display: none;
+}
+.img-behind{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.session-img-one{
+    width: 35%;
+    border-radius: 1rem;
+}
+
+.session-img-two{
+    width: 20%;
+    height: 50%;
+    border-radius: 1rem;
+}
+
+/* z-index img */
+.session-img-three{
+    width: 30%;
+    border-radius: 1rem;
+    position: relative;
+    bottom: 35%;
+    left: 20%;
+}
+
+#dots-img1{
+    position: relative;
+    bottom: 25%;
+    left: 12%;
+    z-index: -1;
+    display: none;
+}
+
+/* right part of 3rd section */
+.content-div{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    right: 0%;
+    top: 0%;
+    display: grid;
+    text-align: center;
+}
+
+
+.content-div h1{    
+    width: 100%;
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.what-btn{
+    height: 2rem;
+    width: 8rem;
+    border-radius: 1rem;
+    background-color: #e0eafa;
+    color: #5f68e4;
+}
+
+.first-p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: gray;
+}
+
+.second-p{
+    font-size: 1.3rem;
+    color: gray;
+    line-height: 1.8rem;
+}
+
+.btn{
+    margin-top: 10%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 1.2rem;
+    background-color: #3275db;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-para{
+    display: flex;
+    flex-direction: column;
+    transform: translateY(12px);
+    gap: 1rem;
+    position: absolute; 
+    top: 0;
+    transition: transform 0.3s ease-out;
+  
+}
+
+.btn:hover .btn-para {
+    transform: translateY(-20px); 
+  }
+
+  .about-btn{
+    justify-self: center;
+  }
+
+
+
+
+  /* fourth section */
+
+.fourth-section{
+    margin-top: 40%;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.fourth-main{
+    text-align: center;
+    justify-self: center;
+    width: 90%;
+    height: 60vh;
+    display: grid;
+    justify-content: space-between;
+}
+
+/* left */
+.fourth-left h1{
+    font-size: 2.8rem;
+    width: 100%;
+}
+
+
+.fourth-left p{
+    font-size: 1.2rem;
+    color: gray;
+    margin-top: 5%;
+}
+
+
+
+/* right */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1px;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.stat-box {
+    background: white;
+    padding: 45px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.stat-box h2 {
+    color: #002F6C;
+    font-size: 3rem;
+}
+.stat-box p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
     
 }
 
 
 
   
+
+
+
+
+
+
+
+
+
+
+
 
 
 
