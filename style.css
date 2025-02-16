@@ -346,7 +346,7 @@ body{
     width: 30%;
     border-radius: 1rem;
     position: relative;
-    bottom: 40%;
+    bottom: 35%;
     left: 20%;
 
     /* top: 225%;
@@ -357,11 +357,31 @@ body{
 .content-div{
     width: 25%;
     height: 55%;
-    border: 2px solid black;
     position: relative;
-    right: 13%;
-    top: 9%;
+    right: 12%;
+    top: 16%;
+    display: grid;
+    justify-content: center;
 }
+
+.content-div h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.what-btn{
+    height: 2rem;
+    width: 8rem;
+    border-radius: 1rem;
+    background-color: #e0eafa;
+    color: #5f68e4;
+}
+
+.first-p{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 
 
 
