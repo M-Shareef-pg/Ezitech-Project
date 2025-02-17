@@ -25,4 +25,11 @@ anchors.forEach(anchor => {
     });
 });
 
-
+document.querySelector('.child-card-universal').addEventListener('mouseleave', function(e) {
+    const innerContent = this.querySelector('.content-inside');
+    innerContent.style.animation = 'gravityFall 0.7s ease-out';
+    
+    setTimeout(() => {
+        innerContent.style.animation = '';
+    }, 500);
+});
