@@ -548,75 +548,34 @@
 
 /* sixth section */
 
-/* .logos{
-    overflow: hidden;
-    padding: 2rem 0;
-}
-
-.logos-slide {
-    white-space: nowrap;
-    word-spacing: 3rem;
-    animation: 150s slides infinite linear;
-}
-
-.logos-slide img{
-    height: 2rem;
-} */
-
 .sixth-section{
     height: 100vh;
     width: 100%;
 }
 
-.testimonial-box {
-    width: 400px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-left: 5px solid #1a73e8;
-}
-
-.profile {
-    display: flex;
+.alumini-div{
+    text-align: center;
+    display: grid;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
-.profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+.alumini-div h1{
+    font-size: 3rem;
 }
 
-.user-info {
-    flex-grow: 1;
-    margin-left: 10px;
+.alumini-para{
+    display: flex;
+    justify-content: center;
 }
 
-h3 {
-    margin: 0;
-    font-size: 16px;
+.alumini-div p{
+    width: 25%;
+    font-size: 1.2rem;
 }
 
-.designation {
-    margin: 0;
-    font-size: 14px;
-    color: gray;
-}
 
-.linkedin-icon {
-    width: 20px;
-    height: 20px;
-}
-
-.testimonial-text {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333;
-    line-height: 1.5;
-}
 
 
 
