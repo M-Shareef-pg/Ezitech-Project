@@ -33,3 +33,15 @@ document.querySelector('.child-card-universal').addEventListener('mouseleave', f
         innerContent.style.animation = '';
     }, 500);
 });
+
+
+// reviews loop
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.slider-track');
+            const reviews = document.querySelectorAll('.review-box');
+            
+            reviews.forEach(review => {
+                const clone = review.cloneNode(true);
+                track.appendChild(clone);
+            });
+        });
