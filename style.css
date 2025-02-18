@@ -5,6 +5,60 @@
     border: none;
 }
 
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 280px;
+    height: 100%;
+    background: #131313;
+    z-index: 999;
+    transition: all 0.3s ease;
+    padding: 20px;
+    display: none;
+}
+
+.mobile-sidebar.active {
+    right: 0;
+}
+
+.mobile-sidebar .close-sidebar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-sidebar ul {
+    margin-top: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.mobile-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    color: white;
+}
+
+
 
 .sm-nav{
     display: none;
@@ -135,6 +189,11 @@
     font-size: 3.2rem;
     font-weight: 600;
     word-spacing: 0.3rem;
+}
+
+.word{
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .word{
@@ -272,6 +331,11 @@
     height: 100%;
     display: grid;
     align-items: center;
+    
+}
+
+.img-scrll-on{
+    transition: transform 0.3s ease-out;
 }
 
 .upper{
@@ -870,6 +934,58 @@
 
 /* Mobile (Small Screens) */
 @media only screen and (max-width: 480px) {
+
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        display: none;
+    }
+    
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 280px;
+        height: 100%;
+        background: #131313;
+        z-index: 999;
+        transition: all 0.3s ease;
+        padding: 20px;
+    }
+    
+    .mobile-sidebar.active {
+        right: 0;
+    }
+    
+    .mobile-sidebar .close-sidebar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .mobile-sidebar ul {
+        margin-top: 50px;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .mobile-sidebar ul li {
+        margin-bottom: 15px;
+    }
+    
+    .mobile-sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        color: white;
+    }
     .sm-nav{
         width: 100%;
         background-color: white;
@@ -1829,6 +1945,59 @@
 
   /* Mobile (Medium Screens) */
   @media only screen and (min-width:481px) and (max-width:767px) {
+
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        display: none;
+    }
+    
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 280px;
+        height: 100%;
+        background: #131313;
+        z-index: 999;
+        transition: all 0.3s ease;
+        padding: 20px;
+    }
+    
+    .mobile-sidebar.active {
+        right: 0;
+    }
+    
+    .mobile-sidebar .close-sidebar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .mobile-sidebar ul {
+        margin-top: 50px;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .mobile-sidebar ul li {
+        margin-bottom: 15px;
+    }
+    
+    .mobile-sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        color: white;
+    }
+
     .sm-nav{
         width: 100%;
         background-color: white;
@@ -2777,6 +2946,58 @@
   
   /* Tablet (Portrait) */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        display: none;
+    }
+    
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 280px;
+        height: 100%;
+        background: #131313;
+        z-index: 999;
+        transition: all 0.3s ease;
+        padding: 20px;
+    }
+    
+    .mobile-sidebar.active {
+        right: 0;
+    }
+    
+    .mobile-sidebar .close-sidebar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .mobile-sidebar ul {
+        margin-top: 50px;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .mobile-sidebar ul li {
+        margin-bottom: 15px;
+    }
+    
+    .mobile-sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        color: white;
+    }
+
     .sm-nav{
         width: 100%;
         background-color: white;
@@ -3729,6 +3950,59 @@
 
   /* Tablet (Landscape) / Small Laptops */
   @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        display: none;
+    }
+    
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        right: -320px;
+        width: 280px;
+        height: 100%;
+        background: #131313;
+        z-index: 999;
+        transition: all 0.3s ease;
+        padding: 20px;
+    }
+    
+    .mobile-sidebar.active {
+        right: 0;
+    }
+    
+    .mobile-sidebar .close-sidebar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .mobile-sidebar ul {
+        margin-top: 50px;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .mobile-sidebar ul li {
+        margin-bottom: 15px;
+    }
+    
+    .mobile-sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        color: white;
+    }
+
     
 .sm-nav{
     width: 100%;
