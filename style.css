@@ -2802,7 +2802,7 @@
     
     .container{
         width: 100%;
-        height: 40vh;
+        height: 60vh;
         background-image: url(images/main\ pic.jpg);
         background-size: cover;
         background-position: 40;
@@ -2954,7 +2954,7 @@
     
     .search-input {
         width: 70%;
-        padding: 20px 40px 20px 20px; /* Added padding for the icon */
+        padding: 20px 40px 20px 20px;
         font-size: 1rem;
         border-radius: 2rem;
         outline: none;
@@ -3018,7 +3018,7 @@
 
 .secondSection{
     width: 100%;
-    height: 130vh;
+    height: 100vh;
 }
 
 /* logos slide */
@@ -3068,12 +3068,12 @@
 .setThree{
     justify-self: center;
     margin-top: 3%;
-    justify-self: center;
     width: 80%;
     height: 50vh;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;   
+    justify-content: space-evenly;
+    flex-wrap: nowrap;   
+    gap: 10%;
 
 }
 
@@ -3124,7 +3124,7 @@
     justify-self: center;
     padding-top: 5%;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     display: grid;
     justify-content: center;
 }
@@ -3134,31 +3134,31 @@
     width: 60%;
     position: relative;
     left: 12%;
-    display: none;
+    height: 80vh;
 }
 .img-behind{
     display: flex;
-    gap: 1.5rem;
+    gap: 20rem;
 }
 
 .session-img-one{
-    width: 35%;
+    width: 40%;
     border-radius: 1rem;
 }
 
 .session-img-two{
-    width: 20%;
+    width: 30%;
     height: 50%;
     border-radius: 1rem;
 }
 
 /* z-index img */
 .session-img-three{
-    width: 30%;
+    width: 40%;
     border-radius: 1rem;
     position: relative;
     bottom: 35%;
-    left: 20%;
+    left: 47%;
 }
 
 #dots-img1{
@@ -3250,7 +3250,7 @@
   /* fourth section */
 
 .fourth-section{
-    margin-top: 5%;
+    margin-top: 25%;
     height: 120vh;
     width: 100%;
 
@@ -3609,7 +3609,7 @@
 }
 
 .button-eight img{
-    width: 30%;
+    width: 20%;
     position: relative;
     top: -70%;
     left: 20%;
@@ -3617,7 +3617,6 @@
 
 /* footer section */
 
-    /* footer section */
 
     .footer-container {
         border-top: 1px solid white;
@@ -3665,12 +3664,14 @@
     }
 
     .newsletter-form {
+        width: 100%;
         display: flex;
         margin-top: 15px;
+        justify-content: center;
     }
 
     .newsletter-input {
-        flex: 1;
+        flex: 0;
         padding: 8px;
         border: 1px solid #ddd;
         border-radius: 4px;
@@ -3697,15 +3698,19 @@
     /* footer bottom */
 
     .footer-bottom {
-        text-align: center;
-        flex-wrap: wrap;
+        text-align: none;
+        flex-wrap: nowrap;
         height: 20vh;
         border-top: 1px solid #eee;
         margin-top: 30px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         color: gray;
+    }
+
+    .footer-bottom p{
+        
     }
 
     .legal-links {
@@ -3729,5 +3734,6 @@
 
   /* Tablet (Landscape) / Small Laptops */
   @media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    
   }
   
